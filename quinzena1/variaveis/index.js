@@ -53,4 +53,59 @@ let primeiroResultado = primeiroNumero + segundoNumero
 let segundoResultado = primeiroNumero * segundoNumero
 
 console.log("O", primeiroNumero, "somado ao", segundoNumero, "resulta em", primeiroResultado)
-console.log("O", primeiroNumero, "mutiplicado pelo", segundoNumero, "resulta em", segundoResultado) */
+console.log("O", primeiroNumero, "mutiplicado pelo", segundoNumero, "resulta em",
+ segundoResultado) */
+
+//
+
+// const numero1 = Number(prompt("Digite o primeiro numero"))
+// const numero2 = Number(prompt("Digite o segundo numero"))
+
+// console.log("O primeiro numero é igual ao segundo?", numero1 === numero2)
+// console.log("O primeiro numero é diferente do segundo?", numero1 !== numero2)
+// console.log("O primeiro numero é maior que o segundo?", numero1 > numero2)
+// console.log("O primeiro numero é menor que o segundo?", numero1 < numero2)
+
+// const a = true
+// const b = false
+// const c = true
+// const d = true
+// const e = true
+
+// console.log(a && b) // true e false == false
+
+// console.log(a && b && c && d && e) // true e false == false
+
+// console.log(a && c && d && e) // true e true == true
+
+// const a = true
+// const b = false
+// const c = true
+
+// console.log("a && b", a && b)
+// console.log("b && c", b && c)
+// console.log("a && c", a && c)
+// console.log("a && b && c", a && b && c)
+
+// const a = true
+// const b = false
+// const c = true
+
+// console.log("a || b", a || b)
+// console.log("b || c", b || c)
+// console.log("a || c", a || c)
+// console.log("a || b || c", a || b || c)
+
+//
+
+const nome = prompt("Qual seu nome?")
+const anoNascimento = Number(prompt("Em que ano você nasceu?"))
+const anoAtual = Number(prompt("Em que ano estamos?"))
+
+//Olá, nome
+//Idade:
+
+
+console.log("Olá", nome)
+console.log(anoAtual - anoNascimento)
+console.log("Idade:", idadeAtual >= 18)
