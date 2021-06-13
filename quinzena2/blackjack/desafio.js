@@ -18,51 +18,45 @@
 //  * 
 //  * 
 //  */
-
-// precisa colocar o comprarCarta em uma array
-// vou criar uma array vazia []
-
-const cartasUsuario = []
-const cartasPC = []
-let pontuacaoUsuario = 0
-let pontuacaoPC = 0
+console.log("Bem vindo ao jogo de Blackjack!")
 
 // agora vou perguntar se o usuário quer começar o jogo se sim, uma mensagem de bem vindo. Se não terminar o Jogo. 
+let jogo = (confirm("Quer iniciar uma nova rodada?"))
 
-if (confirm("Quer iniciar uma nova rodada?")) {
-    console.log("Bem vindo ao Jogo de BlackJack")
-
-    primeirasCartasUser()
-    primeirasCartasPC()
+if (jogo) {
+    let primeiraCarta = comprarCarta()
+    let segundaCarta = comprarCarta()
+    let carta1Pc = comprarCarta()
+    let carta2Pc = comprarCarta()
 
     // se o usuário ou PC tirarem a carta "A" precisa sortear novas cartas, nas duas primeiras cartas
     // includes() determina se um array contém um determinado valor 
-
-    while (cartasUsuario[0].texto.includes('A') && cartasUsuario[1].texto.includes('A')) {
-        primeirasCartasUser()
+    while (primeiraCarta.texto.includes("A") && segundaCarta.texto.includes("A") || carta1Pc.texto.includes("A") && carta2Pc.texto.includes("A")) {
+        primeiraCarta = comprarCarta();
+        segundaCarta = comprarCarta();
+        carta1Pc = comprarCarta();
+        carta2Pc = comprarCarta();
 
     }
 
-    while (cartasPC[0].texto.includes('A') && cartasPC[1].texto.includes('A')) {
-        primeirasCartasPC()
+    // declar variaveis com a soma dos valores das cartas.
+
+    let resultadoUsuario = primeiraCarta.valor + segundaCarta.valor
+    let resultadorPc = carta1Pc.valor + carta2Pc.valor
+    let maisCartas = ""
+    let novaCartaPc = ""
+
+    // agora precisa fazer uma condição que o resultado do Usuario e do PC seja <= a 21
+    // perguntar para o usuário se ele quer comprar mais cartas. 
+    while ((resultadoUsuario <= 21) && confirm(`Suas cartas são ${primeiraCarta.texto} ${segundaCarta.texto} ${maisCartas}. A carta revelada do computador é ${carta1Pc.texto}
+    Deseja comprar mais uma carta?`)) {
+        let maisCartas = comprarCarta();
+        resultadoUsuario = maisCartas.valor + resultadoUsuario
+        maisCartas = novasCartas + maisCartas.texto
     }
 
-    let cartasJogador1 = playerCards()
-    let cartasJogardo2 = pcCards()
-
-    // join() serve para juntar elementos
-    console.log(`Suas cartas são ${cartasJogador1.join(" ")}. A carta revelada do computador é ${cartasJogardo2[0]}\nDeseja comprar mais uma carta?`)
-}
-// perguntar para o usuário se ele quer comprar mais cartas. 
-// reduce() vai trazer um unico resultado 
-// Enquanto a soma não chegar a 21 comprarCarta
-while (confirm("Jogador, deseja comprar uma nova carta?") && pontuacaoUsuario <= 21) {
-    cartasJogador.push(comprarCarta())
-    cartasJogador1 = playerCards()
-    pontuacaoUsuario = cartasJogador.reduce((valorInicial, valorPropriedade) => valorInicial + valorPropriedade.valor, 0)
-    if (pontuacaoUsuario >= 21) {
-        break
+    while (resultadorPc < resultadoUsuario && resultadoUsuario <= 21) {
+        let novaCartaPc = comprarCarta();
+        somaCartaPc = novaCartaPc.valor + resultadorPc
+        novaCartaPc = novaCartaPc + novaCartaPc.texto
     }
-    console.log(`Suas cartas são ${cartasJogador1.join(" ")}. A carta revelada do computador é ${cartasJogardo2[0]}\nDeseja comprar mais uma carta?`)
-
-}
