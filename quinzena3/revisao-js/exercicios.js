@@ -60,120 +60,129 @@ function retornaExpressoesBooleanas() {
 
 // EXERCÍCIO 07
 function retornaNNumerosPares(n) {
-    let numerosPares[
+
+
+}
+
+
+
+// EXERCÍCIO 08
+function checaTriangulo(a, b, c) {
+    // return 'Escaleno'
+    // return 'Equilátero'
+    // return 'Isósceles'
+
+    if (a !== b && b !== c && c !== a) {
+        return 'Escaleno'
+    } else if (a == b && b == c && c == a) {
+        return 'Equilátero'
+    } else if (a === b && a !== c) {
+        return 'Isósceles'
+    }
+}
+
+// EXERCÍCIO 09
+function comparaDoisNumeros(num1, num2) {
+    // Formato do objeto a ser retornado:
+    // {
+    //   maiorNumero: X,
+    //   maiorDivisivelPorMenor: Y,
+    //   diferenca: Z
+    // }
+}
+
+// EXERCÍCIO 10
+function segundoMaiorEMenor(array) {
+
+}
+
+// EXERCÍCIO 11
+function ordenaArray(array) {
+    array.sort
+}
+
+// EXERCÍCIO 12
+function filmeFavorito() {
+    const dadosFilme = {
+        nome: 'O Diabo Veste Prada',
+        ano: 2006,
+        diretor: 'David Frankel',
+        atores: ["Meryl Streep", "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
+    }
+    return dadosFilme
+
+
+}
+
+// EXERCÍCIO 13
+function imprimeChamada() {
+    // "Venha assistir ao filme NOME_DO_FILME, de ANO, dirigido por DIRECAO e estrelado por ELENCO."
+    let dadosFilme = {
+        nome: 'O Diabo Veste Prada',
+        ano: 2006,
+        diretor: 'David Frankel',
+        atores: ["Meryl Streep", "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
     }
 
+    return `Venha assistir ao filme ${dadosFilme.nome}, de ${dadosFilme.ano}, dirigido por ${dadosFilme.diretor} e estrelado por ${dadosFilme.atores[0]}, ${dadosFilme.atores[1]}, ${dadosFilme.atores[2]}, ${dadosFilme.atores[3]}.`
+}
 
+// EXERCÍCIO 14
+function criaRetangulo(lado1, lado2) {
 
-    // EXERCÍCIO 08
-    function checaTriangulo(a, b, c) {
-        // return 'Escaleno'
-        // return 'Equilátero'
-        // return 'Isósceles'
+}
 
-        if (a !== b && b !== c && c !== a) {
-            return 'Escaleno'
-        } else if (a == b && b == c && c == a) {
-            return 'Equilátero'
-        } else if (a === b && a !== c) {
-            return 'Isósceles'
-        }
-    }
+// EXERCÍCIO 15
+function anonimizaPessoa(pessoa) {
 
-    // EXERCÍCIO 09
-    function comparaDoisNumeros(num1, num2) {
-        // Formato do objeto a ser retornado:
-        // {
-        //   maiorNumero: X,
-        //   maiorDivisivelPorMenor: Y,
-        //   diferenca: Z
-        // }
-    }
+}
 
-    // EXERCÍCIO 10
-    function segundoMaiorEMenor(array) {
+// EXERCÍCIO 16A
+function maioresDe18(arrayDePessoas) {
 
-    }
+}
 
-    // EXERCÍCIO 11
-    function ordenaArray(array) {
-        array.sort
-    }
+// EXERCÍCIO 16B
+function menoresDe18(arrayDePessoas) {
 
-    // EXERCÍCIO 12
-    function filmeFavorito() {
-        const dadosFilme = {
-            nome: 'O Diabo Veste Prada',
-            ano: 2006,
-            diretor: 'David Frankel',
-            atores: ["Meryl Streep", "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
-        }
-        return dadosFilme
+}
 
+// EXERCÍCIO 17A
+function multiplicaArrayPor2(array) {
 
-    }
+}
 
-    // EXERCÍCIO 13
-    function imprimeChamada() {
-        // "Venha assistir ao filme NOME_DO_FILME, de ANO, dirigido por DIRECAO e estrelado por ELENCO."
-    }
+// EXERCÍCIO 17B
+function multiplicaArrayPor2S(array) {
 
-    // EXERCÍCIO 14
-    function criaRetangulo(lado1, lado2) {
+}
 
-    }
+// EXERCÍCIO 17C
+function verificaParidade(array) {
 
-    // EXERCÍCIO 15
-    function anonimizaPessoa(pessoa) {
+}
 
-    }
+// EXERCÍCIO 18A
+function retornaPessoasAutorizadas(pessoas) {
 
-    // EXERCÍCIO 16A
-    function maioresDe18(arrayDePessoas) {
+}
 
-    }
+// EXERCÍCIO 18B
+function retornaPessoasNaoAutorizadas(pessoas) {
 
-    // EXERCÍCIO 16B
-    function menoresDe18(arrayDePessoas) {
+}
 
-    }
+// EXERCÍCIO 19A
+function ordenaPorNome(consultasNome) {
 
-    // EXERCÍCIO 17A
-    function multiplicaArrayPor2(array) {
+}
 
-    }
+// EXERCÍCIO 19B
+function ordenaPorData(consultasData) {
 
-    // EXERCÍCIO 17B
-    function multiplicaArrayPor2S(array) {
+}
 
-    }
+// EXERCÍCIO 20
+function calculaSaldo(contas) {
 
-    // EXERCÍCIO 17C
-    function verificaParidade(array) {
-
-    }
-
-    // EXERCÍCIO 18A
-    function retornaPessoasAutorizadas(pessoas) {
-
-    }
-
-    // EXERCÍCIO 18B
-    function retornaPessoasNaoAutorizadas(pessoas) {
-
-    }
-
-    // EXERCÍCIO 19A
-    function ordenaPorNome(consultasNome) {
-
-    }
-
-    // EXERCÍCIO 19B
-    function ordenaPorData(consultasData) {
-
-    }
-
-    // EXERCÍCIO 20
-    function calculaSaldo(contas) {
-
-    }
+}
