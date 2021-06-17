@@ -60,7 +60,14 @@ function retornaExpressoesBooleanas() {
 
 // EXERCÍCIO 07
 function retornaNNumerosPares(n) {
+    let pares = []
+    let contador = 0
 
+    while (contador < n) {
+        pares.push(contador * 2)
+        contador++
+    }
+    return pares
 
 }
 
