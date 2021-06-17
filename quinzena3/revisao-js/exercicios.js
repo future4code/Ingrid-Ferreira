@@ -68,6 +68,14 @@ function checaTriangulo(a, b, c) {
     // return 'Escaleno'
     // return 'Equilátero'
     // return 'Isósceles'
+
+    if (a !== b && b !== c && c !== a) {
+        return 'Escaleno'
+    } else if (a == b && b == c && c == a) {
+        return 'Equilátero'
+    } else if (a === b && a !== c) {
+        return 'Isósceles'
+    }
 }
 
 // EXERCÍCIO 09
@@ -87,13 +95,18 @@ function segundoMaiorEMenor(array) {
 
 // EXERCÍCIO 11
 function ordenaArray(array) {
-
+    array.sort
 }
 
 // EXERCÍCIO 12
 function filmeFavorito() {
-
-
+    const dadosFilme = {
+        nome: 'O Diabo Veste Prada',
+        ano: 2006,
+        diretor: 'David Frankel',
+        atores: ["Meryl Streep", "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
+    }
+    console.log(dadosFilme)
 }
 
 // EXERCÍCIO 13
