@@ -102,16 +102,40 @@ function checaTriangulo(a, b, c) {
 
 // EXERCÍCIO 09
 function comparaDoisNumeros(num1, num2) {
-    // Formato do objeto a ser retornado:
-    // {
-    //   maiorNumero: X,
-    //   maiorDivisivelPorMenor: Y,
-    //   diferenca: Z
-    // }
-    const compararNumeros = (num1, num2) => {
 
-
+    const compararNumeros = {
+        maiorNumero: 0,
+        maiorDivisivelPeloMenor: false,
+        diferenca: 0
     }
+    if (num1 > num2) {
+        resultados[maiorNumero] = num1
+    } else if (num1 > num2) {
+        resultados[maiorNumero] = num2
+    } else if (num2 > num1) {
+        resultados[maiorNumero] = num2
+    }
+
+    if (num1 % num2 === 0) {
+        console.log(`${num1} é divisivel por ${num2}`)
+    } else if (num2 % num1 === 0) {
+        console.log(`${num1} não é divisivel por ${num2}`)
+    }
+
+
+    if (num2 % num1 === 0) {
+        console.log(`${num1} é divisivel por ${num2}`)
+    } else {
+        console.log(`${num2} é divisivel por ${num1}`)
+    }
+
+    if (num1, num2) {
+        console.log("A diferença entre eles é", num1 - num2)
+    } else if (num2 > num1) {
+        console.log("A diferença entre eles é", num2 - num1)
+    }
+
+    return (compararNumeros)
 }
 
 // EXERCÍCIO 10
@@ -121,8 +145,15 @@ function segundoMaiorEMenor(array) {
 
 // EXERCÍCIO 11
 function ordenaArray(array) {
-    array.length - 1;
+    array.sort(function compare(a, b) {
+        if (a < b) return -1;
+        if (a > b) return 1;
+        return 0;
+    })
+    return array
 }
+
+
 
 // EXERCÍCIO 12
 function filmeFavorito() {
@@ -197,6 +228,8 @@ function menoresDe18(arrayDePessoas) {
 
 // EXERCÍCIO 17A
 function multiplicaArrayPor2(array) {
+    const multiplicaPorDois = array.map(dobro => dobro * 2)
+    return multiplicaPorDois
 
 }
 
