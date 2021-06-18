@@ -189,7 +189,10 @@ function maioresDe18(arrayDePessoas) {
 
 // EXERCÍCIO 16B
 function menoresDe18(arrayDePessoas) {
-
+    const maioresDeIdade = arrayDePessoas.filter(array => {
+        return array.idade < 18
+    })
+    return maioresDeIdade
 }
 
 // EXERCÍCIO 17A
