@@ -228,7 +228,15 @@ function multiplicaArrayPor2S(array) {
 
 // EXERCÍCIO 17C
 function verificaParidade(array) {
-
+    let novoArray = []
+    array.map((numero) => {
+        if (numero % 2 === 0) {
+            novoArray.push(`${numero} é par`)
+        } else {
+            novoArray.push(`${numero} é ímpar`)
+        }
+    })
+    return novoArray
 }
 
 // EXERCÍCIO 18A
