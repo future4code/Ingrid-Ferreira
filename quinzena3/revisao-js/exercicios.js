@@ -159,11 +159,24 @@ function criaRetangulo(lado1, lado2) {
 
 // EXERCÍCIO 15
 function anonimizaPessoa(pessoa) {
+    const dados = {
+        nome: "Carlos",
+        idade: 26,
+        email: "carlos@labenu.com.br",
+        endereco: "Rua do Futuro, 4"
+    }
+    const novosDados = {
+        ...pessoa,
+        nome: "ANÔNIMO"
+    }
+
+    return novosDados
 
 }
 
 // EXERCÍCIO 16A
 function maioresDe18(arrayDePessoas) {
+    //  const Pessoas[nome: "Pedro", idade: 20, { nome: "João", idade: 10 }, { nome: "Paula", idade: 12 }, { nome: "Artur", idade: 89 }]
 
 }
 
