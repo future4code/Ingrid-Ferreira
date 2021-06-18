@@ -102,40 +102,23 @@ function checaTriangulo(a, b, c) {
 
 // EXERCÍCIO 09
 function comparaDoisNumeros(num1, num2) {
-
-    const compararNumeros = {
+    const comparacaoDosNumeros = {
         maiorNumero: 0,
-        maiorDivisivelPeloMenor: false,
+        maiorDivisivelPorMenor: false,
         diferenca: 0
     }
+
     if (num1 > num2) {
-        resultados[maiorNumero] = num1
-    } else if (num1 > num2) {
-        resultados[maiorNumero] = num2
+        comparacaoDosNumeros[maiorNumero] = num1
+        comparacaoDosNumeros[maiorDivisivelPorMenor] = (num1 % num2 === 0)
+        comparacaoDosNumeros[diferenca] = (true)
     } else if (num2 > num1) {
-        resultados[maiorNumero] = num2
+        comparacaoDosNumeros[maiorNumero] = num2
+        comparacaoDosNumeros[maiorDivisivelPorMenor] = (num2 % num1 === 0)
+        comparacaoDosNumeros[diferenca] = (false)
     }
 
-    if (num1 % num2 === 0) {
-        console.log(`${num1} é divisivel por ${num2}`)
-    } else if (num2 % num1 === 0) {
-        console.log(`${num1} não é divisivel por ${num2}`)
-    }
-
-
-    if (num2 % num1 === 0) {
-        console.log(`${num1} é divisivel por ${num2}`)
-    } else {
-        console.log(`${num2} é divisivel por ${num1}`)
-    }
-
-    if (num1, num2) {
-        console.log("A diferença entre eles é", num1 - num2)
-    } else if (num2 > num1) {
-        console.log("A diferença entre eles é", num2 - num1)
-    }
-
-    return (compararNumeros)
+    return comparaDoisNumeros
 }
 
 // EXERCÍCIO 10
@@ -235,7 +218,12 @@ function multiplicaArrayPor2(array) {
 
 // EXERCÍCIO 17B
 function multiplicaArrayPor2S(array) {
-
+    let novoArray = []
+    array.map((numero) => {
+        let numeroString = numero * 2
+        novoArray.push(numeroString.toString())
+    })
+    return novoArray
 }
 
 // EXERCÍCIO 17C
