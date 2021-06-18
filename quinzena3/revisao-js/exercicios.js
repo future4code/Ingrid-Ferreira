@@ -108,6 +108,10 @@ function comparaDoisNumeros(num1, num2) {
     //   maiorDivisivelPorMenor: Y,
     //   diferenca: Z
     // }
+    const compararNumeros = (num1, num2) => {
+
+
+    }
 }
 
 // EXERCÍCIO 10
@@ -117,7 +121,7 @@ function segundoMaiorEMenor(array) {
 
 // EXERCÍCIO 11
 function ordenaArray(array) {
-    array.sort
+    array.length - 1;
 }
 
 // EXERCÍCIO 12
@@ -176,7 +180,10 @@ function anonimizaPessoa(pessoa) {
 
 // EXERCÍCIO 16A
 function maioresDe18(arrayDePessoas) {
-    //  const Pessoas[nome: "Pedro", idade: 20, { nome: "João", idade: 10 }, { nome: "Paula", idade: 12 }, { nome: "Artur", idade: 89 }]
+    const maioresDeIdade = arrayDePessoas.filter(array => {
+        return array.idade > 17
+    })
+    return maioresDeIdade
 
 }
 
