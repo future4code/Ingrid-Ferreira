@@ -142,7 +142,22 @@ function comparaDoisNumeros(num1, num2) {
 
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
+    // precisa receber uma array com numeros, e depois no retorno precisa trazer uma nova
+    //array com dois numeros, o maior e o menor. 
+    // aqui vou precisar puxar um laço (for) que é sempre igual. 
+    // depois dentro do for preciso de mais um laço para percorrer toda a array. 
+    // e depois dentro do ultimo for, preciso colocar um if. 
+    for (let i = 0; i < array.length; i++) {
+        for (let a = 0; a < array.length; a++) {
+            if (array[a] > array[a + 1]) {
+                let temporario = array[a];
+                array[a] = array[a + 1];
+                array[a + 1] = temporario;
+            }
+        }
+    }
 
+    return [array[array.length - 2], array[1]]
 }
 
 // EXERCÍCIO 11
