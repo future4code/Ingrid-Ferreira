@@ -102,23 +102,42 @@ function checaTriangulo(a, b, c) {
 
 // EXERCÍCIO 09
 function comparaDoisNumeros(num1, num2) {
-    const comparacaoDosNumeros = {
+    // preciso fazer uma variavel para com maiorNumero, maiorDivisivelporMenor
+    // e diferenca
+    const resultado = {
         maiorNumero: 0,
-        maiorDivisivelPorMenor: false,
+        maiorDivisivelPorMenor: 0,
         diferenca: 0
     }
 
+    // Preciso fazer um if else para saber qual o numero é maior
     if (num1 > num2) {
-        comparacaoDosNumeros[maiorNumero] = num1
-        comparacaoDosNumeros[maiorDivisivelPorMenor] = (num1 % num2 === 0)
-        comparacaoDosNumeros[diferenca] = (true)
-    } else if (num2 > num1) {
-        comparacaoDosNumeros[maiorNumero] = num2
-        comparacaoDosNumeros[maiorDivisivelPorMenor] = (num2 % num1 === 0)
-        comparacaoDosNumeros[diferenca] = (false)
+        resultado.maiorNumero = num1
+        numeroEscolhidoMaior = num1
+        numeroEscolhidoMenor = num2
+    } else if (num1 < num2) {
+        resultado.maiorNumero = num2
+        numeroEscolhidoMaior = num2
+        numeroEscolhidoMenor = num1
+    } else {
+        resultado.maiorNumero = num1
+
     }
 
-    return comparaDoisNumeros
+    // Agora precisa usar o % para saber se o maior é divisivel por ele
+    // mesmo, o resto dessa divisão tem que ser igual a 0.  
+    if (numeroEscolhidoMaior % numeroEscolhidoMenor === 0) {
+        resultado.maiorDivisivelPorMenor = true
+    } else {
+        resultado.maiorDivisivelPorMenor = false
+    }
+
+    // agora vou ter que saber a diferença entre os numeros maiores e menores
+    // para isso precisa usar o operador condicional (?)
+    // nessa parte precisa fazer um num1 - num2
+    resultado.maiorNumero == num1 ? resultado.diferenca = num1 - num2 : resultado.diferenca = num2 - num1
+
+    return resultado
 }
 
 // EXERCÍCIO 10
@@ -128,6 +147,7 @@ function segundoMaiorEMenor(array) {
 
 // EXERCÍCIO 11
 function ordenaArray(array) {
+    // aqui vou usar o array.sort (dica do Professor)
     array.sort(function compare(a, b) {
         if (a < b) return -1;
         if (a > b) return 1;
