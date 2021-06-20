@@ -102,7 +102,7 @@ function checaTriangulo(a, b, c) {
 
 // EXERCÍCIO 09
 function comparaDoisNumeros(num1, num2) {
-    // preciso fazer uma variavel para com maiorNumero, maiorDivisivelporMenor
+    // preciso fazer uma variavel para colocar maiorNumero, maiorDivisivelporMenor
     // e diferenca
     const resultado = {
         maiorNumero: 0,
@@ -288,15 +288,57 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 
 // EXERCÍCIO 19A
 function ordenaPorNome(consultasNome) {
+    // precisa colocar o nome das pessoas em ordem alfabetica 
+    // nos videos as pessoas usam laço for 
+    //for (let i = 0; i < array.length; i++)
+
+    // let teste = false;
+    // for (let i = 0; i < consultasNome.length - 1; i++) {
+    //     teste = true;
+
+
+    return consultasNome.sort((a, b) => {
+        if (a.nome < b.nome) return -1
+        return 0
+    })
 
 }
 
 // EXERCÍCIO 19B
 function ordenaPorData(consultasData) {
 
+    const arrumarData = (a, b) => {
+        return new Date(a.dataDaConsulta).getTime() - new Date(b.dataDaConsulta).getTime()
+    }
+
+    // transformar em padrão americano 
+
+    consultasData.forEach(consulta => {
+        consulta.dataDaConsulta = consulta.dataDaConsulta.split('/').reverse().join('-')
+    })
+
 }
 
 // EXERCÍCIO 20
 function calculaSaldo(contas) {
+    // const contas = [
+    //     { cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
+    //     { cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
+    //     { cliente: "Pedro", saldoTotal: 10000, compras: [5140, 6100, 100, 2000] },
+    //     { cliente: "Luciano", saldoTotal: 100, compras: [100, 200, 1700] },
+    //     { cliente: "Artur", saldoTotal: 1800, compras: [200, 300] },
+    //     { cliente: "Soter", saldoTotal: 1200, compras: [] }
+    // ]
 
+    // function calculaSaldo(contas) {
+    //     contas.map((contas) => {
+    //         let comprasTotal = 0;
+    //         for (let i = 0; i < contas.compras.length; i++) {
+    //             comprasTotal += contas.compras[i]
+    //         }
+    //         contas.saldoTotal -= comprasTotal
+    //     })
+
+    // }
+    // return calculaSaldo
 }
