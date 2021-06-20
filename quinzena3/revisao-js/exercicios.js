@@ -330,15 +330,12 @@ function calculaSaldo(contas) {
     //     { cliente: "Soter", saldoTotal: 1200, compras: [] }
     // ]
 
-    // function calculaSaldo(contas) {
-    //     contas.map((contas) => {
-    //         let comprasTotal = 0;
-    //         for (let i = 0; i < contas.compras.length; i++) {
-    //             comprasTotal += contas.compras[i]
-    //         }
-    //         contas.saldoTotal -= comprasTotal
-    //     })
+    return contas.map(conta => {
+        return {
+            cliente: conta.cliente,
+            saldoTotal: conta.saldoTotal - conta.compras.reduce((acumulador, atual) => acumulador += atual, 0),
+            compras: conta.compras
+        }
+    })
 
-    // }
-    // return calculaSaldo
 }
