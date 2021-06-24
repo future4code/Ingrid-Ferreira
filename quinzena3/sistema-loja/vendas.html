@@ -12,7 +12,7 @@
 <body>
     <div id="area-cabecalho">
         <div id="area-logo">
-            <h1>Bem-vind@ ao <em id="nome">Dia De Festa!!</em></h1>
+            <h1><em id="nome">Dia De Festa!!</em></h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
         </div>
         <div id="menu">
@@ -22,60 +22,70 @@
             <a href="funcionarios.html">Funcionários</a> |
             <a href="vendas.html">Vendas </a>|
             <a href="historico-venda.html">Historico de Vendas </a>
+
         </div>
     </div>
+    </div>
+    <h2>Vendas</h2>
+    <div>
+        <form id="vendas">
+            Nome do Produto: <br>
+            <input type="text" name="nomeProduto">
+            <br> Codigo do Produto: <br>
+            <input type="number" name="codigo">
+            <br>
 
-    <h2>Historico</h2>
-
-    <div id="historico">
+            <input type="button" value="Adicionar">
+            <input type="button" value="Salvar"></div>
+    <div id="formulario">
         <table>
             <tr>
-                <th>Venda</th>
-                <th>Data</th>
-                <th>Horario</th>
-                <th>Vendido por:</th>
+                <th>Codigo Produto</th>
+                <th>Quantidade</th>
+                <th>Produto</th>
+                <th>Cliente</th>
                 <th>Valor Total</th>
                 <th>Forma de Pagamento</th>
             </tr>
             <tr>
                 <td>001</td>
-                <td>28/03/2021</td>
-                <td>15h</td>
-                <td>Marge</td>
+                <td>01</td>
+                <td>Kit Festa</td>
+                <td>Marcos</td>
                 <td>R$ 105,00</td>
                 <td>Cartão Debito</td>
             </tr>
             <tr>
                 <td>002</td>
-                <td>29/03/2021</td>
-                <td>16h</td>
-                <td>Homer</td>
-                <td>R$ 60,00</td>
+                <td>02</td>
+                <td>Doces para Festa</td>
+                <td>Maria</td>
+                <td>R$ 80,00</td>
                 <td>Cartão Credito</td>
             </tr>
             <tr>
                 <td>003</td>
-                <td>29/03/2021</td>
-                <td>12h</td>
-                <td>Lisa</td>
-                <td>R$ 80,00</td>
+                <td>02</td>
+                <td>Salgados</td>
+                <td>Luiza</td>
+                <td>R$ 90,00</td>
                 <td>Dinheiro</td>
             </tr>
             <tr>
 
                 <td>004</td>
-                <td>30/03/2021</td>
-                <td>19h</td>
-                <td>Bart</td>
-                <td>R$ 210,00</td>
+                <td>10</td>
+                <td>Refrigerante</td>
+                <td>Flavio</td>
+                <td>R$ 26,90</td>
                 <td>Cartão Credito</td>
             </tr>
             <tr>
                 <td>005</td>
-                <td>30/03/2021</td>
-                <td>21h</td>
-                <td>Megie</td>
-                <td>R$ 80,00</td>
+                <td>01</td>
+                <td>Bolo de Festa</td>
+                <td>Alexandre</td>
+                <td>R$ 60,00</td>
                 <td>Dinheiro</td>
             </tr>
         </table>
