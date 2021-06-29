@@ -44,6 +44,9 @@ div img {
     border-radius: 5px;
     font-size: 20px;
     color: white;
+    display: block;
+    margin-top: 90px;
+    text-align: center;
 }
 
 .botao-amarelo:hover {
@@ -113,7 +116,6 @@ td button {
     margin-top: 20px;
     height: 100px;
 }
-
 
 #back-button {
     background-color: white;
