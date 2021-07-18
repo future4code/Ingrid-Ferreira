@@ -54,7 +54,7 @@ function imprimeInformacoesUsuario() {
     const idade = prompt(Number("Digite sua idade"))
     const email = prompt("Digite seu e-mail")
 
-    console.log("Meu nome é" + name + ",tenho" + idade + "anos, e o meu e-mail é" + email + ".")
+    console.log("Meu nome é " + name + ", tenho " + idade + " anos, e o meu email é " + email + ".")
 }
 
 // Exercício 5
@@ -89,27 +89,59 @@ function calculaIngressosEspetaculo() {
 // Exercício 8
 function checaStringsMesmoTamanho() {
     // escreva seu código aqui
-    let stringUm = prompt("Digite um texto")
-    let stringDois = prompt("Digite seu segundo texto")
+    const string1 = prompt("Escolha uma cor")
+    const string2 = prompt("Escolha outra cor")
+
+    console.log(string1.length === string2.length)
 
 }
 
 // Exercício 9
 function checaIgualdadeDesconsiderandoCase() {
     // escreva seu código aqui
+
+    const string1 = prompt("Digite um texto")
+    const string2 = prompt("Digite seu segundo texto")
+
+    const iguais = string1.toLowerCase() === string2.toLowerCase()
+
+    console.log(iguais)
 }
 
 // Exercício 10
 function checaRenovacaoRG() {
     // escreva seu código aqui
+
+    const anoAtual = Number(prompt("Que ano estamos?"))
+    const anoNasc = Number(prompt("Qual o ano do seu nascimento?"))
+    const anoRg = Number(prompt("Ano que seu RG foi emitido?"))
+
+    const idade = anoAtual - anoNasc
+    const emissao = anoAtual - anoRg
+
+    console.log((idade <= 20 && emissao >= 5) || (idade > 20 && idade <= 50 && emissao >= 10) || (idade > 50 && emissao >= 15))
+
+
 }
 
 // Exercício 11
 function checaAnoBissexto() {
     // escreva seu código aqui
+
+    const ano = Number(prompt("Digite um ano"));
+    console.log((ano % 400 === 0) || (ano % 4 === 0) && (ano % 100 != 0))
+
 }
 
 // Exercício 12
 function checaValidadeInscricaoLabenu() {
     // escreva seu código aqui
+
+    const idade = prompt("É maior de 18 anos? :")
+    const escolaridade = prompt("Você possui ensino médio? :")
+    const disponibilidade = prompt("Você possui disponibilidade exclusiva durante os horários do curso? :")
+        //const sim = true
+
+    console.log(idade == "sim" && escolaridade == "sim" && disponibilidade == "sim")
+
 }
