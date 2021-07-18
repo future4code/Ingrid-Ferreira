@@ -93,6 +93,7 @@ function checaStringsMesmoTamanho() {
     const string2 = prompt("Escolha outra cor")
 
     console.log(string1.length === string2.length)
+
 }
 
 // Exercício 9
@@ -110,6 +111,7 @@ function checaIgualdadeDesconsiderandoCase() {
 // Exercício 10
 function checaRenovacaoRG() {
     // escreva seu código aqui
+
     const anoAtual = Number(prompt("Que ano estamos?"))
     const anoNasc = Number(prompt("Qual o ano do seu nascimento?"))
     const anoRg = Number(prompt("Ano que seu RG foi emitido?"))
@@ -128,6 +130,7 @@ function checaAnoBissexto() {
 
     const ano = Number(prompt("Digite um ano"));
     console.log((ano % 400 === 0) || (ano % 4 === 0) && (ano % 100 != 0))
+
 }
 
 // Exercício 12
@@ -140,4 +143,5 @@ function checaValidadeInscricaoLabenu() {
         //const sim = true
 
     console.log(idade == "sim" && escolaridade == "sim" && disponibilidade == "sim")
+
 }
