@@ -2,20 +2,28 @@ import React from 'react';
 import axios from 'axios';
 import styled from 'styled-components'
 
+import logo from './Img/fone_logo.png'
+
 const Site = styled.div`
 height: 100vh;
-/* background-color: black; */
 display:flex;
 justify-content: space-between;
 overflow-x: hidden;
 `;
 
 const Header = styled.header`
-background-color: #FAB24E;
+background-color: #0088cc;
 height: 150px;
 display: flex;
 font-size: 35px;
 align-items: center;
+
+img {
+    width: 78px;
+    height: 78px;
+    margin: 0 12px;
+}
+
 `;
 const BtnPaginas = styled.div`
 display: flex;
@@ -24,12 +32,13 @@ justify-content: center;
 
   button {
     border: none;
-    background-color: #FAB24E;
+    background-color: #ADD8E6;
+    border-radius: 10px;
     font-size: 30px;
   }
 `
 const Footer = styled.footer`
-background-color: #FE7E01;
+background-color: #0088cc;
 display: flex;
 justify-content: flex-end;
 padding: 25px;
@@ -59,7 +68,9 @@ export default class App extends React.Component {
   render() {
     return (
       <Site>
-        <Header>Labefy</Header>
+        <Header>
+           <img src={logo} alt="Labefy" onClick={this.goToPaginaCadastro} /> <h1 onClick={this.goToPaginaCadastro}>Labefy</h1>
+        </Header>
                 
           <BtnPaginas><button onClick={this.goToPaginaLista}>Lista de Playlists</button></BtnPaginas>
           <BtnPaginas><button onClick={this.goToPaginaCadastro}>Cadastrar Playlists</button></BtnPaginas>
