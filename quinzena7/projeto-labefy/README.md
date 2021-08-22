@@ -1,70 +1,78 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#  𝄞 Labefy
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Índice
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Descrição](#-descrição-do-projeto)
+- [Como acessar o projeto](#-como-acessar-o-projeto)
+- [Desenvolvimento](#-desenvolvimento)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🖋 Descrição do projeto
 
-### `npm run build`
+A proposta do  **Labefy**  da  [Labenu](https://labenu.com.br/)  é desenvolver uma aplicação que simule um aplicativo parecei com o Spotify, usando ReactJS com JS e usando a API da [Labefy](https://documenter.getpostman.com/view/7549981/SztBc8eT?version=latest)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+O projeto consistirá em 3 grandes partes:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**As funcionalidades do projeto estão listadas abaixo**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O usuário deve ser capaz de criar uma playlist de músicas. Para isso, ele só precisa passar um nome. Não podem existir playlists com o mesmo nome.
 
-### `npm run eject`
+Deve haver a possibilidade do usuário visualizar todas as suas playlists, em uma lista específica. Nesta lista, o usuário também pode deletar alguma playlist.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+O usuário deve ser capaz de visualizar os detalhes de uma playlist: o seu nome e as músicas que fazem parte dela.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para adicionar músicas à playlist, o usuário deve informar: o nome, os artistas relacionados (que pode ser só um cantor ou uma banda) e um link com o arquivo de áudio correspondente a esta música
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+##  👨‍💻️  Tecnologias Utilizadas
 
-## Learn More
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-   [ReactJS](https://reactjs.org/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🌎 Como acessar o projeto
 
-### Making a Progressive Web App
+- [Link do surge](/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## 🚀 Desenvolvimento
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+o projeto foi desenvolvido usando as seguintes tecnologias:
 
-### Deployment
+-   [React.js](https://pt-br.reactjs.org/docs/getting-started.html)
+-   [Styled-Components](https://styled-components.com/docs)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 💾  Como baixar o projeto
 
-### `npm run build` fails to minify
+-   Primeiro instale o  [Git](https://git-scm.com/),  [Node.jS](https://nodejs.org/pt-br/download/)  +  [npm](https://www.npmjs.com/get-npm)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Clonar o repositório
+git clone https://github.com/future4code/Johnson-labe-commerce3.git
+
+# Entrar no diretório
+cd 
+
+
+# Instalar as dependências
+npm install
+
+
+# Rodar o projeto
+npm run start
+
+
+---
+
+Desenvolvido com por Ingrid
