@@ -1,78 +1,76 @@
 
-#  𝄞 Labefy
+#  🎵 Labefy
 
-
-
----
+A ideia central deste projeto é realizar uma integração com a [API](https://documenter.getpostman.com/view/7549981/SztBc8eT?version=latest) *Labefy*, que permite o gerenciamento básico de playlists de músicas
 
 # Índice
 
 - [Descrição](#-descrição-do-projeto)
 - [Como acessar o projeto](#-como-acessar-o-projeto)
-- [Desenvolvimento](#-desenvolvimento)
+- [Documentação API](#-API-utilizada)
+- [Tecnologias utilizadas](#-tecnologias-utilizadas)
+- [Como baixar o projeto](#-como-baixar-o-projeto)
+
+
+---
+
+
+<img width="905" alt="Labefy" src="https://user-images.githubusercontent.com/83792403/131136059-9dd2ff1a-010e-432b-8e78-882671f8ee4e.png">
+
+
 
 ---
 
 ## 🖋 Descrição do projeto
 
-A proposta do  **Labefy**  da  [Labenu](https://labenu.com.br/)  é desenvolver uma aplicação que simule um aplicativo parecei com o Spotify, usando ReactJS com JS e usando a API da [Labefy](https://documenter.getpostman.com/view/7549981/SztBc8eT?version=latest)
+-   O usuário deve ser capaz de criar uma playlist de músicas. Para isso, ele só precisa passar um nome. Não podem existir playlists com o mesmo nome.
 
-O projeto consistirá em 3 grandes partes:
+-   Deve haver a possibilidade do usuário visualizar todas as suas playlists, em uma lista específica. Nesta lista, o usuário também pode deletar alguma playlist.
 
-**As funcionalidades do projeto estão listadas abaixo**
+-   O usuário deve ser capaz de visualizar os detalhes de uma playlist: o seu nome e as músicas que fazem parte dela.
 
-O usuário deve ser capaz de criar uma playlist de músicas. Para isso, ele só precisa passar um nome. Não podem existir playlists com o mesmo nome.
+-   Para adicionar músicas à playlist, o usuário deve informar: o nome, os artistas relacionados (que pode ser só um cantor ou uma banda) e um link com o arquivo de áudio correspondente a esta música.
 
-Deve haver a possibilidade do usuário visualizar todas as suas playlists, em uma lista específica. Nesta lista, o usuário também pode deletar alguma playlist.
-
-O usuário deve ser capaz de visualizar os detalhes de uma playlist: o seu nome e as músicas que fazem parte dela.
-
-Para adicionar músicas à playlist, o usuário deve informar: o nome, os artistas relacionados (que pode ser só um cantor ou uma banda) e um link com o arquivo de áudio correspondente a esta música
-
----
-
-##  👨‍💻️  Tecnologias Utilizadas
-
-O projeto foi desenvolvido utilizando as seguintes tecnologias:
-
--   [ReactJS](https://reactjs.org/)
-
-
-
+- Por fim, quando o usuário abrir o detalhe da playlist, ele deve ser capaz de ouvir a cada uma das músicas que estiverem inseridas na playlist. Um botão de 'play' e 'pause' é essencial para isto.
 
 ---
 
 ## 🌎 Como acessar o projeto
 
-- [Link do surge](/)
+- [Link do surge](https://rich-rub.surge.sh/)
+
+## 🎼 API utilizada
+
+- [Link Documentação API](https://documenter.getpostman.com/view/7549981/SztBc8eT?version=latest)
 
 
-## 🚀 Desenvolvimento
 
-o projeto foi desenvolvido usando as seguintes tecnologias:
+## 🚀 Tecnologias utilizadas
 
--   [React.js](https://pt-br.reactjs.org/docs/getting-started.html)
--   [Styled-Components](https://styled-components.com/docs)
+O projeto foi desenvolvido usando as seguintes tecnologias:
 
-## 💾  Como baixar o projeto
+- [React.js](https://pt-br.reactjs.org/docs/getting-started.html)
+- [Styled-Components](https://styled-components.com/docs)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
+- [Sweetalert](https://sweetalert.js.org/docs/)
 
--   Primeiro instale o  [Git](https://git-scm.com/),  [Node.jS](https://nodejs.org/pt-br/download/)  +  [npm](https://www.npmjs.com/get-npm)
+## 💾 Como baixar o projeto
 
+Primeiro instale o [Git](https://git-scm.com/), [Node.jS](https://nodejs.org/pt-br/download/) + [npm](https://www.npmjs.com/get-npm)
+bash
 # Clonar o repositório
-git clone https://github.com/future4code/Johnson-labe-commerce3.git
+git clone https://github.com/future4code/Ingrid-Ferreira.git
 
 # Entrar no diretório
-cd 
-
+cd labefy
 
 # Instalar as dependências
 npm install
-
+npm install styled-components
+npm install axios
+npm install sweetalert
 
 # Rodar o projeto
 npm run start
 
-
----
-
-Desenvolvido com por Ingrid
+Desenvolvido com por Ingrid Ferreira.
