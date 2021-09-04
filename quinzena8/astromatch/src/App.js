@@ -1,33 +1,32 @@
-import react from 'react'
-import { container } from 'webpack';
-import { ButtonMatch, ContainerHeader, ContainerApp, DivButton } from './styled';
+import React, {useState} from "react";
+import { PaginaInicial } from "./pages/PaginaInicial/PaginaInicial";
+import {PaginaMatches} from "./pages/PaginaMatches/PaginaMatches";
 
+const App = () => {
 
-function App() {
-  const [startMatch, setInicialMatch] = useState(true);
+  const [currentPage, setCurrentPage] = useState("index")
 
-  const onClickChance = () => {
-    setInicialMatch(!startMatch)
+  const mudarPagina = () => {
+      if (currentPage === "index") {
+          setCurrentPage("matches")
+      } else {
+          setCurrentPage("index")
+      }
   }
 
-  return (
+  const limparMatches = () => {
+      console.log("Limpar Matches")
+  }
 
-    <Body>
-      <ContainerApp>
-        <ContainerHeader>
-          <DivButton>
-            {startMatch ? <></> : <ButtonMatch src={matchIcon} onClickChance />}
-          </DivButton> <Logo src={logo} />
-          <DivButton>
+  return(
 
-          {startMatch ? <ButtonChat src={chatIcon} onClick={onClickChange} /> : <></>}
-          </DivButton>
-        </ContainerHeader>
-          {startMatch ? <InitialMatch/> : <Matchs />}
-      </ContainerApp>
-    </Body>
+    <div>
+    {currentPage === "index" ? <PaginaInicial /> : <PaginaMatches />}    
+    <button onClick={mudarPagina}>{currentPage==="index" ? "Matches" : "Home"}</button>
+    <button onClick={limparMatches}>Limpar Matches</button>
+    </div>
   )
 
 }
 
-export default App;
+export default App
