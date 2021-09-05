@@ -37,7 +37,7 @@ O projeto foi desenvolvido usando as seguintes tecnologias:
 
 ## 🌎 Como acessar o projeto
 
-- [Link do surge](/)
+- [Link do surge](/vacuous-bridge.surge.sh)
 
 
 ## 🚀 Desenvolvimento
