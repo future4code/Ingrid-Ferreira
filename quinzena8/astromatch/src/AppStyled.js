@@ -11,7 +11,7 @@ export const Body = styled.div `
   }
 `;
 
-export const ContainerApp = styled.div `
+export const ContainerMasterApp = styled.div `
   display:flex;
   margin: 0 auto;
   justify-content: center;

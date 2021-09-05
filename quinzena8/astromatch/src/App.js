@@ -1,32 +1,39 @@
-import React, {useState} from "react";
-import { PaginaInicial } from "./pages/PaginaInicial/PaginaInicial";
-import {PaginaMatches} from "./pages/PaginaMatches/PaginaMatches";
+import React, { useState} from 'react';
 
-const App = () => {
+import Matchs from './components/Matchs/Matchs';
+import InitialMatch from './components/InitialMatch/InitialMatch';
 
-  const [currentPage, setCurrentPage] = useState("index")
+import logo from './images/astromatch.png';
+import chatIcon from './images/chat-matches.svg';
+import matchIcon from './images/matches-icon.svg';
+import { Body, ContainerMasterApp, ContainerHeader, Logo, DivButton, ButtonChat, ButtonMatch } from './AppStyled';
 
-  const mudarPagina = () => {
-      if (currentPage === "index") {
-          setCurrentPage("matches")
-      } else {
-          setCurrentPage("index")
-      }
+function App() {
+  const [startMatch, setInitialMatch] = useState(true);
+
+  const onClickChange = () => {
+    setInitialMatch(!startMatch)
   }
 
-  const limparMatches = () => {
-      console.log("Limpar Matches")
-  }
+  return (
+    <>
+    <Body>
+      <ContainerMasterApp>
+        <ContainerHeader>
+          <DivButton>
+            {startMatch ? <></> : <ButtonMatch src={matchIcon} onClick={onClickChange} />}
+          </DivButton>
+          <Logo src={logo} />
+          <DivButton>
 
-  return(
-
-    <div>
-    {currentPage === "index" ? <PaginaInicial /> : <PaginaMatches />}    
-    <button onClick={mudarPagina}>{currentPage==="index" ? "Matches" : "Home"}</button>
-    <button onClick={limparMatches}>Limpar Matches</button>
-    </div>
-  )
-
+          {startMatch ? <ButtonChat src={chatIcon} onClick={onClickChange} /> : <></>}
+          </DivButton>
+        </ContainerHeader>
+          {startMatch ? <InitialMatch/> : <Matchs />}
+      </ContainerMasterApp>
+    </Body>
+    </>
+  );
 }
 
-export default App
+export default App;
