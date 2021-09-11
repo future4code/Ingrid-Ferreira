@@ -5,7 +5,9 @@ import {Router} from "./Router/Router.js";
 
 
 const App = () => {
-  return <Router />;
+  return (
+    <p>Teste</p>
+  )
 }
 
 export default App;
