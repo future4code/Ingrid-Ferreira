@@ -1,6 +1,7 @@
 import React from 'react';
 import { useHistory, useParams } from "react-router";
-import {Container} from "../Styled/Styled.js";
+import {Button, Container} from "../Styled/Styled.js";
+import axios from "axios";
 
 
 export const HomePage = () => {
@@ -52,9 +53,51 @@ export const HomePage = () => {
         },
       ];
 
+      const goToHome = () => {
+        history.push("/");
+      };
+
+      const goToListTrips =() => {
+        history.push("/listTrips")
+      }
+
+      const gotToFormTrip = () => {
+        history.push("/formtrip")
+      }
+
+      const goToLogin = () => {
+        history.push("/login")
+      }
+
+      const goToTripDetails =() => {
+        history.push("/tripDetails")
+      }
+
     return(
         <Container>
-            <p>Bem vindo(a) a LabeX</p>  
+          
+            <h1>Bem vindo(a) a LabeX</h1> 
+
+            <Button onClick={goToHome}>
+              Home
+            </Button>
+
+            <Button onClick={goToListTrips}>
+              Lista de Viagens
+            </Button>
+
+            <Button onClick={gotToFormTrip}>
+              Formulario
+            </Button>
+
+            <Button onClick={goToLogin}>
+              Login
+            </Button>
+
+            <Button onClick={goToTripDetails}>
+              Detalhes da Viagens
+            </Button>
+            
         </Container>      
             
  
